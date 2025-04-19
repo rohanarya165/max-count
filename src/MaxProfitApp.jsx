@@ -32,8 +32,8 @@ export default function MaxProfitApp() {
   const handleCalculate = () => {
     const time = parseInt(timeUnit, 10);
     if (!isNaN(time) && time > 0) {
-      if (time > 100) {
-        alert('Please enter a number ≤ 100 to avoid slow performance.');
+      if (time > 1000) {
+        alert('Please enter a number ≤ 1000 to avoid slow performance.');
         return;
       }
       setLoading(true);
